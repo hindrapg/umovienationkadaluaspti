@@ -12,23 +12,8 @@ const setColor = (vote) =>{
     }
 }
 
+const WatchListOut = (movie) =>{
 
-
-const Movie = (movie) =>{
-    const [{watchList},dispatch] = useStateValue(['']);
-    // console.log(watchList);
-
-    const addToWatchList = () =>{
-        dispatch({
-            type: 'ADD_TO_WATCHLIST',
-            item:{
-                title : title, 
-                poster_path : poster_path, 
-                overview : overview, 
-                vote_average : vote_average
-            },
-        })
-    };
     const {title, poster_path, overview, vote_average} = movie;
     return (
         <div className="movie">
@@ -41,10 +26,8 @@ const Movie = (movie) =>{
                 <h3>Overview : </h3>
                 <h4>{title}</h4>
                 <p>{overview}</p>
-                <button type="button" onClick={addToWatchList} className="buttonWatch">+ ADD TO YOUR WATCHLIST</button>
             </div>
         </div>
     );
 };
-
-export default Movie;
+export default WatchListOut;

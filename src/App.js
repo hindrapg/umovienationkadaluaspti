@@ -4,6 +4,7 @@ import Navbar from './components/navbar';
 import { BrowserRouter as Router,Switch, Route } from "react-router-dom";
 import About from './components/about';
 import Favorite from './components/favorite';
+import watchList from './components/watchList';
 
 
 
@@ -15,6 +16,7 @@ function App(){
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/home" exact component={Home}></Route>
+          <Route path="/watchList" exact component={watchList}></Route>
           <Route path="/favorite" exact component={Favorite}></Route>
           <Route path="/about" exact component={About}></Route>
         </Switch>

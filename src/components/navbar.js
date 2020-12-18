@@ -14,6 +14,9 @@ const Navbar = () => {
                 <NavLink to="/favorite">
                     <span>Top Rated Movie</span>
                 </NavLink>
+                <NavLink to="/watchList">
+                    <span>Your WatchList</span>
+                </NavLink>
                 <NavLink to="/about" >
                     <span>About Us</span> 
                 </NavLink>
