@@ -22,7 +22,7 @@ const About = () => {
             <div class="profile">
               <img src={hindra} class="profile-img" />
               
-              <h3 class="user-name">Hindra Pangadi Ghozalli</h3>
+              <h3 class="user-name">Hindra Pangadi Test</h3>
               <h5>Project Manager</h5>
               <p>Our manager and director for the project</p>
             </div>
